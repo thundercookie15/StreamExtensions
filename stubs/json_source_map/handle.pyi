@@ -1,0 +1,13 @@
+from . import types as types
+
+
+def value(source: str, current_location: types.Location) -> types.TSourceMapEntries: ...
+
+
+def object_(source: str, current_location: types.Location) -> types.TSourceMapEntries: ...
+
+
+def array(source: str, current_location: types.Location) -> types.TSourceMapEntries: ...
+
+
+def primitive(source: str, current_location: types.Location) -> types.TSourceMapEntries: ...

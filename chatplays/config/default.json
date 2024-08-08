@@ -1,0 +1,18 @@
+{
+  "bind_hostname": "",
+  "bind_ports": [
+    33000,
+    33001
+  ],
+  "encryption_key": "",
+  "encryption_mode": "AES-GCM",
+  "whitelist": [
+    "127.*",
+    "localhost",
+    "192.168.*"
+  ],
+  "blacklist": [],
+  "xinput_gamepads": [
+    0
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "../schema/config_schema.json",
+  "config_name": "Desert Bus",
+  "events": {
+    "file_events": {
+      "enabled": true
+    },
+    "hotkeys": {
+      "failsafe": "Shift+Scroll_Lock",
+      "accept_input": "Shift+]"
+    }
+  },
+  "operators": [
+    "$broadcaster",
+    "$mods",
+    "thundercookie15"
+  ],
+  "irc": {
+    "host": "irc.chat.twitch.tv",
+    "port": 6697,
+    "message_interval": 5
+  },
+  "sessionlog": {
+    "enable_chatlog": true,
+    "enable_consolelog": true
+  },
+  "teams": [
+    {
+      "type": "Default",
+      "name": "Chat",
+      "queue_length": 10,
+      "hidden": false,
+      "use_random_inputs": false,
+      "channels": [
+        "nagzz21"
+      ],
+      "spam_protection": true,
+      "actionset": {
+        "type": "DesertBus_GP",
+        "action_prefix": "+",
+        "doc_url": "https://gist.github.com/thundercookie15/20f57d6adc91b02861c39149001bc182",
+        "player_index": 0,
+        "input_server": {
+          "type": "remote",
+          "port": 33000
+        }
+      }
+    }
+  ]
+}

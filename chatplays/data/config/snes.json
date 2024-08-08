@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/config_schema.json",
+  "config_name": "SNES",
+  "events": {
+    "file_events": {
+      "enabled": true
+    },
+    "hotkeys": {
+      "failsafe": "Shift+Home",
+      "accept_input": "Shift+]"
+    }
+  },
+  "operators": [
+    "$broadcaster",
+    "$mods",
+    "thundercookie15",
+    "reldeththesummoner",
+    "reggx"
+  ],
+  "irc": {
+    "host": "irc.chat.twitch.tv",
+    "port": 6697,
+    "message_interval": 3
+  },
+  "sessionlog": {
+    "enable_chatlog": true,
+    "enable_consolelog": true,
+    "enable_periodic_dumps": true,
+    "dumping_interval": 600
+  },
+  "teams": [
+    {
+      "type": "Default",
+      "name": "Chat",
+      "queue_length": 10,
+      "hidden": false,
+      "exclusive": false,
+      "use_random_inputs": false,
+      "channels": [
+        "nagzz21",
+        "thundercookie15"
+      ],
+      "spam_protection": true,
+      "actionset": {
+        "type": "SNES_GP",
+        "action_prefix": "+",
+        "allow_changing_macros": true,
+        "persistent_macros": true,
+        "macro_file": "data/macros/snes.json",
+        "doc_url": "https://gist.github.com/thundercookie15/f572217c1812a8e6b35f466ac65781f0",
+        "player_index": 0,
+        "input_server": {
+          "type": "remote",
+          "port": 33000
+        }
+      }
+    },
+    {
+      "type": "Whitelist",
+      "name": "Mods",
+      "queue_length": 10,
+      "hidden": false,
+      "use_random_inputs": false,
+      "channels": [
+        "nagzz21",
+        "thundercookie15"
+      ],
+      "exclusive": false,
+      "spam_protection": true,
+      "user_whitelist": [
+        "$broadcaster",
+        "$mods",
+        "reldeththesummoner",
+        "thundercookie15",
+        "reggx"
+      ],
+      "actionset": {
+        "type": "SNES_Hotkeys_GP",
+        "action_prefix": "!",
+        "doc_url": "https://gist.github.com/thundercookie15/f572217c1812a8e6b35f466ac65781f0",
+        "player_index": 0,
+        "input_server": {
+          "type": "remote",
+          "port": 33001
+        }
+      }
+    }
+  ]
+}

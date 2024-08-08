@@ -1,0 +1,10 @@
+/.idea/
+/.vscode/
+chatplays/data/credentials/
+chatplays/data/session/
+**/__pycache__/
+**/pyuac.*
+/userinterface/pokemon
+/userinterface/images
+/userinterface/SNES
+/userinterface/temp_images

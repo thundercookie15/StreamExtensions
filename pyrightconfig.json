@@ -1,0 +1,12 @@
+{
+  "exclude": [
+    "venv/*",
+    "**/__pycache__",
+    "stubs/*",
+    "build_sayu_panel.spec"
+  ],
+  "ignore": [
+    "stubs/*",
+    "build_sayu_panel.spec"
+  ]
+}
