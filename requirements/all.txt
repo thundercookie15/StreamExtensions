@@ -7,6 +7,7 @@ autocommand==2.2.2
 bandit==1.7.5
 cfgv==3.3.1
 charset-normalizer==3.1.0
+customtkinter==5.2.2
 colorama==0.4.6
 comtypes==1.1.14
 coverage==7.2.3
@@ -59,7 +60,6 @@ pyinstaller-hooks-contrib==2024.7
 pysimplegui==5.0.6
 psutil==5.9.5
 pypiwin32==223
-pyqt6==6.7.1
 pyrsistent==0.19.3
 pytest==7.3.1
 pytest-cov==4.0.0
