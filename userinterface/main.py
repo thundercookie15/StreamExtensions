@@ -31,7 +31,7 @@ from chatplays.streamchatwars._shared.types import CredentialDict, TwitchChatCre
 from chatplays.streamchatwars.chat.chatbot import Custom_Reactor, StopBotException
 from chatplays.streamchatwars.chat.chatmsg import ChatMessage
 from chatplays.streamchatwars.config import json_utils
-from chatplays.streamchatwars.config.config import read_json_configs, IRC_Settings, extract_irc_settings
+from chatplays.streamchatwars.config.config import IRC_Settings, extract_irc_settings, read_json_configs
 from chatplays.streamchatwars.config.json_utils import InvalidCredentialsError
 from chatplays.streamchatwars.events.events_states import GlobalEventStates
 from userinterface import games, obsplugin

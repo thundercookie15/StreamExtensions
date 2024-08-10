@@ -1,0 +1,47 @@
+{
+  "$schema": "../schema/config_schema.json",
+  "config_name": "GTA V",
+  "events": {
+    "file_events": {
+      "enabled": true
+    },
+    "hotkeys": {
+      "failsafe": "Shift+Backspace"
+    }
+  },
+  "operators": [
+    "$broadcaster",
+    "thundercookie15"
+  ],
+  "irc": {
+    "host": "irc.chat.twitch.tv",
+    "port": 6697,
+    "message_interval": 1
+  },
+  "sessionlog": {
+    "enable_chatlog": true,
+    "enable_consolelog": true
+  },
+  "teams": [
+    {
+      "type": "Default",
+      "name": "Chat",
+      "queue_length": 10,
+      "hidden": false,
+      "use_random_inputs": false,
+      "channels": [
+        "thundercookie15",
+        "sayu"
+      ],
+      "actionset": {
+        "type": "GTA_GP",
+        "action_prefix": "+",
+        "player_index": 0,
+        "input_server": {
+          "type": "remote",
+          "port": 33000
+        }
+      }
+    }
+  ]
+}

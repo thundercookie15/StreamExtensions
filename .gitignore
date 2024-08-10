@@ -1,7 +1,7 @@
 /.idea/
 /.vscode/
-chatplays/data/credentials/
-chatplays/data/session/
+data/credentials/
+data/session/
 **/__pycache__/
 **/pyuac.*
 /userinterface/pokemon
